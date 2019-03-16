@@ -16,8 +16,5 @@ emulator=$2
 game=$(basename "$3")
 game=${game%.*}
 
-# Turn on the relevant LEDs for this game.
-sudo /home/pi/bin/led-start "$system" "$game" >/dev/null
-
 #  Send game info to picture server
 python3 /home/pi/bin/simpleClient.py "OPEN $system $game" >/dev/null
