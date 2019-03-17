@@ -11,7 +11,7 @@ The software consist of three main components
 
 Discusison of the problem, and its many possible solutions are [here](https://retropie.org.uk/forum/topic/21464/show-control-panel-layout-before-game-starts-in-retropie-just-like-arcade1up-does).
 
-For my project, the [WIKI page](https://github.com/Texacate/Visual-RetroPie-Control-Maps/wiki) serves as the main documention. How I appoached the prolem, what hardware was used, and how all the scripts work is described on the wiki.
+For my project, the [WIKI page](https://github.com/Texacate/Visual-RetroPie-Control-Maps/wiki) serves as the main documention. How I appoached the issues, what hardware was used, where all the scripts go, and how they work are all described in the wiki.  Some help simplifing the wiki would be appreciated.
 
 Special thanks to:
 * The entire [RetroPie](https://retropie.org.uk) project team
