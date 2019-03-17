@@ -9,7 +9,9 @@ The software consist of three main components
 * RPi1 must tell RPi2 what game is playing         (runcommand-onstart & simpleClinet.py)
 * RPi2 must display the appropriate button map.    (simpleServer.py and fbi)
 
-https://retropie.org.uk/forum/topic/21464/show-control-panel-layout-before-game-starts-in-retropie-just-like-arcade1up-does
+Discusison of the problem, and its many possible solutions are [here](https://retropie.org.uk/forum/topic/21464/show-control-panel-layout-before-game-starts-in-retropie-just-like-arcade1up-does).
+
+The [project WIKI page](https://github.com/Texacate/Visual-RetroPie-Control-Maps/wiki) serves as the main documention page for the project.
 
 Special thanks to:
 * The entire [RetroPie](https://retropie.org.uk) project team
