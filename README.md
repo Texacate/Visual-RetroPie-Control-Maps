@@ -1,5 +1,5 @@
 # Visual-RetroPie-Control-Maps
-Displaying a visual map or legend of how the hardware control are mapped, on a RetroPie cabinet
+Displaying a visual map or legend of how the in-game actions are mapped to the hardware control on my RetroPie cabinet
 
 Virtually every original arcade cabinet had a unique control layout, with different numbers of buttons. MAME cabinets are already a design compromise with buttons going used in many games. I wanted an easy way to remind myself what buttons cause what action, in any given arcade game.
 
@@ -11,7 +11,7 @@ The software consist of three main components
 
 Discusison of the problem, and its many possible solutions are [here](https://retropie.org.uk/forum/topic/21464/show-control-panel-layout-before-game-starts-in-retropie-just-like-arcade1up-does).
 
-The [project WIKI page](https://github.com/Texacate/Visual-RetroPie-Control-Maps/wiki) serves as the main documention page for the project.
+For my project, the [WIKI page](https://github.com/Texacate/Visual-RetroPie-Control-Maps/wiki) serves as the main documention. How I appoached the prolem, what hardware was used, and how all the scritps work is described on the wiki.
 
 Special thanks to:
 * The entire [RetroPie](https://retropie.org.uk) project team
