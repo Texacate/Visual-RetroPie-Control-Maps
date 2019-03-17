@@ -15,6 +15,6 @@ The [project WIKI page](https://github.com/Texacate/Visual-RetroPie-Control-Maps
 
 Special thanks to:
 * The entire [RetroPie](https://retropie.org.uk) project team
-* The entire [ImageMagic][https://www.imagemagick.org] project team
+* The entire [ImageMagic](https://www.imagemagick.org) project team
 * Alexander Baran-Harper for his [YouTube educational video](https://www.youtube.com/watch?v=PYBZtV2-sLQ&list=PLNnwglGGYoTvy37TSGFlv-aFkpg7owWrE&index=31) on Raspberr Pi
 
