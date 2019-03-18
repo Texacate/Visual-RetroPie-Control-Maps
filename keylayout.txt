@@ -1,0 +1,6 @@
+#BASENAME OF ROM|Button B|Button A|Button R|Button Y|Button X|Button L 
+default|B|A|R|Y|X|L
+asteroid|Hyperspace||||Thrust|Fire
+pacman|Speed
+
+
