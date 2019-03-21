@@ -16,5 +16,8 @@ For my project, the [WIKI page](https://github.com/Texacate/Visual-RetroPie-Cont
 Special thanks to:
 * The entire [RetroPie](https://retropie.org.uk) project team
 * The entire [ImageMagic](https://www.imagemagick.org) project team
-* Alexander Baran-Harper for his [YouTube educational videos](https://www.youtube.com/watch?v=PYBZtV2-sLQ&list=PLNnwglGGYoTvy37TSGFlv-aFkpg7owWrE&index=31) on the Raspberry Pi 
+* Alexander Baran-Harper for his [YouTube educational videos](https://www.youtube.com/watch?v=PYBZtV2-sLQ&list=PLNnwglGGYoTvy37TSGFlv-aFkpg7owWrE&index=31) on the Raspberry Pi
+* Kevin Jonas (SirPoonga), Howard Casto and the [controls.dat](http://controls.arcadecontrols.com) project contributors
+* @yo1dog and the [controls-dat-jason](https://github.com/yo1dog/controls-dat-json) project  
+* @markwkidd and the [lr-mame2003-plus](https://github.com/libretro/mame2003-plus-libretro/blob/master/src/controls.c) project contributors 
 
