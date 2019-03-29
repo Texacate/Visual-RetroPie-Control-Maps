@@ -5,7 +5,7 @@ Virtually every original arcade cabinet had a unique control layout, with differ
 
 The software consist of three main components
 
-* Something to generate a set of button map images (ImageMagic)
+* Something to generate a set of button map images (button_map.sh & ImageMagic)
 * RPi1 must tell RPi2 what game is playing         (runcommand-onstart.sh & simpleClinet.py)
 * RPi2 must display the appropriate button map.    (simpleServer.py & fbi)
 
