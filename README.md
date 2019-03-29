@@ -6,7 +6,7 @@ Virtually every original arcade cabinet had a unique control layout, with differ
 The software consist of three main components
 
 * Something to generate a set of button map images (button_map.sh & ImageMagic)
-* RPi1 must tell RPi2 what game is playing         (runcommand-onstart.sh & simpleClinet.py)
+* RPi1 must tell RPi2 what game is playing         (runcommand-onstart.sh & simpleClient.py)
 * RPi2 must display the appropriate button map.    (simpleServer.py & fbi)
 
 Discusison of the problem, and its many possible solutions are [here](https://retropie.org.uk/forum/topic/21464/show-control-panel-layout-before-game-starts-in-retropie-just-like-arcade1up-does).
