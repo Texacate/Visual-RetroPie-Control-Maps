@@ -1,11 +1,6 @@
 #/bin/bash
 # USAGE:  button_map.sh <rom_basename>
 
- export MAGICK_HOME="$HOME/Documents/Hobby/Arcade/ImageMagick-7.0.8"
- export PATH="$MAGICK_HOME/bin:$PATH"
- export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
- 
-
 ## Set LOGO_DIR to the folder of containing artwork to be inclued at the top of the generated images
 ## Example for rom_name: pacman 
 ##  the program will look for artwork: ./wheel/pacman.png
@@ -26,8 +21,6 @@ CLONEDB="./mame2003-plus.csv"
 BUTTONDB="./button_map.csv"
 #BUTTONDB="./controls.csv"
 
-
-
 name=""
 b1=""
 b2=""
@@ -46,6 +39,37 @@ BTN_DATA=""
 PARENT=""
 CLONE_OF=""
 IFS=","
+
+function findCurrentOSType()
+{
+    echo "Finding the current os type"
+    local osType=$(uname)
+    case "$osType" in
+            "Darwin")
+            {
+                echo "Running on Mac OSX."
+                export MAGICK_HOME="$HOME/Documents/Hobby/Arcade/ImageMagick-7.0.8"
+                export PATH="$MAGICK_HOME/bin:$PATH"
+                export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
+                MAGICK="magick"
+                font="Arial"
+                fontB="ArialB"
+            } ;;    
+            "Linux")
+            {
+                echo "Running on Linux."
+                MAGICK=""
+                font="Helvetica"
+                fontB="Helvetica-Bold"
+            } ;;
+	    *)
+	    {
+                echo "Unsupported OS, exiting"
+                exit
+            } ;;
+    esac
+}
+
 
 function get_parent_buttons () {
     local rom="$1"
@@ -66,7 +90,7 @@ function get_parent_clone () {
     local cloneof=""
     echo "Looking through parent/clone data for $rom"
     while read -r name cloneof; do
-        if [[ "$rom" == "$name" ]]; then	
+        if [[ "$rom" == "$name" ]]; then
 	    PARENT="$name"
 	    if [ "$cloneof" == "" ]; then
                echo "  Found $rom, is parent rom"
@@ -79,7 +103,7 @@ function get_parent_clone () {
     done < <(tr -d '\r' < "$CLONEDB")
 }
 
-# Map database button order to retro pad 
+# Map database button order to retro pad
 function map_buttons_retro_pad () {
 rpB="$b1"
 rpA="$b2"
@@ -137,18 +161,18 @@ function gen_not_found_png () {
 
   if [ -f $logo ]; then
     echo "  Adding wheel art $logo"
-    magick convert $logo -resize 600x200  ./tmp/logo.resized.png
-    magick convert -size 800x480 xc:black \
+    $MAGICK convert $logo -resize 600x200  ./tmp/logo.resized.png
+    $MAGICK convert -size 800x480 xc:black \
       ./tmp/logo.resized.png -gravity north  -geometry +0+50  -composite \
-      -gravity south -font Arial -pointsize 50  -fill white -annotate +0+150 "No button data found for ROM:" \
-      -gravity south -font Arial -pointsize 100 -fill white -annotate +0+30 "$rom.zip" \
-      -gravity south_west -font ArialB -pointsize 20 -fill yellow -annotate +10+10 "$text" \
+      -gravity south -font $font -pointsize 50  -fill white -annotate +0+150 "No button data found for ROM:" \
+      -gravity south -font $font -pointsize 100 -fill white -annotate +0+30 "$rom.zip" \
+      -gravity south_west -font $fontB -pointsize 20 -fill yellow -annotate +10+10 "$text" \
       ./tmp/$rom.png
   else
-    magick convert -size 800x480 xc:black \
-      -gravity center -font Arial -pointsize 50  -fill white -annotate +0-50 "No button data found for ROM:" \
-      -gravity center -font Arial -pointsize 100 -fill white -annotate +0+50 "$rom.zip" \
-      -gravity south_west -font ArialB -pointsize 20 -fill yellow -annotate +10+10 "$text" \
+    $MAGICK convert -size 800x480 xc:black \
+      -gravity center -font $font -pointsize 50  -fill white -annotate +0-50 "No button data found for ROM:" \
+      -gravity center -font $font -pointsize 100 -fill white -annotate +0+50 "$rom.zip" \
+      -gravity south_west -font $fontB -pointsize 20 -fill yellow -annotate +10+10 "$text" \
       ./tmp/$rom.png
   fi
   echo "Final image ./tmp/$rom.png"
@@ -192,8 +216,6 @@ function  get_button_color () {
   
 function get_font_sizes () {
   echo "  Calulating fonts for $BTN_DATA"
-# font="ComicSansMSB"
-  font="ArialNarrowB"
   calc_point $cp1;  pt1=$point
   calc_point $cp2;  pt2=$point
   calc_point $cp3;  pt3=$point
@@ -218,19 +240,19 @@ function get_font_sizes () {
 
 function gen_annotated_png_6_button () {  
   sw=5  
-  magick convert -size 2400x1440 xc:black \
+  $MAGICK convert -size 2400x1440 xc:black \
     $btn1_img -gravity south  -geometry -550+550 -composite \
     $btn2_img -gravity south  -geometry   +0+675 -composite \
     $btn3_img -gravity south  -geometry +550+550 -composite \
     $btn4_img -gravity south  -geometry -550+50  -composite \
     $btn5_img -gravity south  -geometry   +0+175 -composite \
     $btn6_img -gravity south  -geometry +550+50  -composite \
-    -gravity south -font $font -pointsize $pt1 -fill white -stroke black -strokewidth $sw -annotate -550+675 "$cp1" \
-    -gravity south -font $font -pointsize $pt2 -fill white -stroke black -strokewidth $sw -annotate   +0+850 "$cp2" \
-    -gravity south -font $font -pointsize $pt3 -fill white -stroke black -strokewidth $sw -annotate +550+675 "$cp3" \
-    -gravity south -font $font -pointsize $pt4 -fill white -stroke black -strokewidth $sw -annotate -550+175 "$cp4" \
-    -gravity south -font $font -pointsize $pt5 -fill white -stroke black -strokewidth $sw -annotate   +0+350 "$cp5" \
-    -gravity south -font $font -pointsize $pt6 -fill white -stroke black -strokewidth $sw -annotate +550+175 "$cp6" \
+    -gravity south -font $fontB -pointsize $pt1 -fill white -stroke black -strokewidth $sw -annotate -550+675 "$cp1" \
+    -gravity south -font $fontB -pointsize $pt2 -fill white -stroke black -strokewidth $sw -annotate   +0+850 "$cp2" \
+    -gravity south -font $fontB -pointsize $pt3 -fill white -stroke black -strokewidth $sw -annotate +550+675 "$cp3" \
+    -gravity south -font $fontB -pointsize $pt4 -fill white -stroke black -strokewidth $sw -annotate -550+175 "$cp4" \
+    -gravity south -font $fontB -pointsize $pt5 -fill white -stroke black -strokewidth $sw -annotate   +0+350 "$cp5" \
+    -gravity south -font $fontB -pointsize $pt6 -fill white -stroke black -strokewidth $sw -annotate +550+175 "$cp6" \
     ./tmp/2_annotated.png
 }
 
@@ -245,7 +267,7 @@ function gen_annotated_png_6_button () {
 
 function gen_annotated_png_8_button () {  
   sw=5  
-  magick convert -size 2400x1440 xc:black \
+  $MAGICK convert -size 2400x1440 xc:black \
     $btn1_img -gravity south  -geometry -750+550 -composite \
     $btn2_img -gravity south  -geometry -250+650 -composite \
     $btn3_img -gravity south  -geometry +250+750 -composite \
@@ -254,14 +276,14 @@ function gen_annotated_png_8_button () {
     $btn5_img -gravity south  -geometry -250+150 -composite \
     $btn6_img -gravity south  -geometry +250+250 -composite \
     $btn8_img -gravity south  -geometry +750+150 -composite \
-    -gravity south -font $font -pointsize $pt1 -fill white -stroke black -strokewidth $sw -annotate -750+675 "$cp1" \
-    -gravity south -font $font -pointsize $pt2 -fill white -stroke black -strokewidth $sw -annotate -250+775 "$cp2" \
-    -gravity south -font $font -pointsize $pt3 -fill white -stroke black -strokewidth $sw -annotate +250+875 "$cp3" \
-    -gravity south -font $font -pointsize $pt7 -fill white -stroke black -strokewidth $sw -annotate +750+775 "$cp7" \
-    -gravity south -font $font -pointsize $pt4 -fill white -stroke black -strokewidth $sw -annotate -750+175 "$cp4" \
-    -gravity south -font $font -pointsize $pt5 -fill white -stroke black -strokewidth $sw -annotate -250+275 "$cp5" \
-    -gravity south -font $font -pointsize $pt6 -fill white -stroke black -strokewidth $sw -annotate +250+375 "$cp6" \
-    -gravity south -font $font -pointsize $pt8 -fill white -stroke black -strokewidth $sw -annotate +750+275 "$cp8" \
+    -gravity south -font $fontB -pointsize $pt1 -fill white -stroke black -strokewidth $sw -annotate -750+675 "$cp1" \
+    -gravity south -font $fontB -pointsize $pt2 -fill white -stroke black -strokewidth $sw -annotate -250+775 "$cp2" \
+    -gravity south -font $fontB -pointsize $pt3 -fill white -stroke black -strokewidth $sw -annotate +250+875 "$cp3" \
+    -gravity south -font $fontB -pointsize $pt7 -fill white -stroke black -strokewidth $sw -annotate +750+775 "$cp7" \
+    -gravity south -font $fontB -pointsize $pt4 -fill white -stroke black -strokewidth $sw -annotate -750+175 "$cp4" \
+    -gravity south -font $fontB -pointsize $pt5 -fill white -stroke black -strokewidth $sw -annotate -250+275 "$cp5" \
+    -gravity south -font $fontB -pointsize $pt6 -fill white -stroke black -strokewidth $sw -annotate +250+375 "$cp6" \
+    -gravity south -font $fontB -pointsize $pt8 -fill white -stroke black -strokewidth $sw -annotate +750+275 "$cp8" \
     ./tmp/2_annotated.png
 }
 
@@ -291,16 +313,16 @@ function gen_logo_png () {
   
   if [ -f $logo ]; then
     echo "  Adding wheel art $logo"
-    magick convert $logo -resize 1500x275  ./tmp/logo.resized.png
-    magick convert ./tmp/2_annotated.png \
+    $MAGICK convert $logo -resize 1500x275  ./tmp/logo.resized.png
+    $MAGICK convert ./tmp/2_annotated.png \
       ./tmp/logo.resized.png -gravity north  -geometry +0+50  -composite \
-      -gravity south_west -font ArialB -pointsize 60 -fill yellow -annotate +10+10 "$text" \
+      -gravity south_west -font $fontB -pointsize 60 -fill yellow -annotate +10+10 "$text" \
       -resize 800x480 ./arcade/$rom.png
   else
     echo "  No wheel art found for $rom"
-    magick convert ./tmp/2_annotated.png \
-      -gravity north -font Arial -pointsize 200 -fill white -annotate +0+50 "$rom.zip" \
-      -gravity south_west -font ArialB -pointsize 60 -fill yellow -annotate +10+10 "$text" \
+    $MAGICK convert ./tmp/2_annotated.png \
+      -gravity north -font $font -pointsize 200 -fill white -annotate +0+50 "$rom.zip" \
+      -gravity south_west -font $fontB -pointsize 60 -fill yellow -annotate +10+10 "$text" \
       -resize 800x480 ./arcade/$rom.png
   fi
   echo "Final image ./arcade/$rom.png"
@@ -340,6 +362,7 @@ echo "========================"
 echo "|     MAIN PROGRAM     |"
 echo "========================"
 
+findCurrentOSType
 
 echo "Loading parent_clone database: $CLONEDB"
 readonly CLONEDB
@@ -369,8 +392,12 @@ else
 fi
 
 
-# available FONTS on my computer
-# -------------------------------
+# To see fonts that ImageMagick can use:
+#    convert -list font        (Linux)
+#    magick convert -list font (OSX)
+#
+# Available fonts on my computer. Yours may be different
+# -------------------------------------------------------
 # AndaleMono		CambriaBI	FranklinGothicBook	LucidaSansUnicode	Skia
 # AppleChancery		CambriaI	FranklinGothicBookI	Marlett			Tahoma
 # AppleMyungjo		Candara 	FranklinGothicM		Meiryo			TahomaB
@@ -394,7 +421,5 @@ fi
 # CalibriB		CorbelTestBI	Impact			ReferenceSansSerif	Wingdings
 # CalibriBI		CourierNew	InaiMathi		ReferenceSpecialty	Wingdings2
 # CalibriI		CourierNewB	Kokonor			Sathu			Wingdings3
-# Cambria		CourierNewBI	Krungthep		Silom			Zapfino
+# Cambria		CourierNewBI	rungthep		Silom			Zapfino
 # CambriaB		CourierNewI	LucidaConsole		SimSun
-
-
