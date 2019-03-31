@@ -1,9 +1,9 @@
 # My list of games that I could not find button data for
 # Note: a few have been rearranged to fit my preferrred layout
-# 20pacgal is one such example. But 95% of them are in the default mame order.
+# 20pacgal is one such example. But 99% of them are in the default mame order.
 # -------------------------------------------------------------------------
 10yard,Pass/Hike,Lateral
-20pacgal,Ms.P(1P),Fire,Ms.P(2P),,Galaga(2P),Galaga(1P)
+#20pacgal,Ms.P(1P),Fire,Ms.P(2P),,Galaga(2P),Galaga(1P)
 280zzzap,Accel,Shift
 40love,BackHand,LightSwing,HardSwing,Toss
 88games,Run,Jump,Run
@@ -208,6 +208,9 @@ fspiderb,Fire,Jump,??
 fstarfrc,Fire,Bomb
 funkyjet,Knockout,Change Position
 funnymou,Balloon
+gaia,Punch,Kick,Jump,Magic
+gaiapols,Attack,Ally Attack,Special
+galaxygn,Fire,Loop
 galivan,Punch/Fire,Kick
 galmedes,Fire,Select Weapon
 gangwars,Kick,Jump,Punch
@@ -225,6 +228,7 @@ gladiatr,Attack Up,Attack Middle,Attack Down
 gokuparo,A,B,C
 goldbug,Instructions
 gpilots,Shoot,Special Weapon
+gradius3,Select,Fire,Missile,
 grobda,Fire,Shield
 growl,Attack,Jump
 gseeker,Fire,Bomb
@@ -243,6 +247,7 @@ hacham,Fire,Bomb
 hal21,Fire,Bomb
 hanagumi,Jewels Position,Special
 hangon,Throttle,Brake
+hangonjr,Throttle,Brake
 harddunk,Pass,Shoot
 hardhead,Shoot,Jump
 headon,Speed
@@ -263,37 +268,334 @@ hotshock,fire
 htchctch,Draw,Change Color
 hunchbak,Jump
 hwrace,Jump,Brake
+hydra,Pedal,Fire,Boost
 hyperath,A,B,
 hyperpac,Jump,Helmet Laser
 hyprduel,Fire/Max Fire,Change/Max Fire
+igmo,Move,Fire
+imsorry,Punch,Jump
+indianbt,Fire
+insector,Blast
+insectx,Shoot,Extra Weapon
+inthunt,Torpedo,Missle/Depth Charges
+intrepid,Action
+invinco,Fire,Rotate Left,Rotate Right
+ironhors,Attack,Crouch,Special Weapon 
+ixion,Fire
 jack,Jump
+jackrabt,Jump
 jitsupro,Swing/Throw,Look,TimeOut
+jjack,Jump
+jjsquawk,Attack,Jump
+junofrst,Fire,Warp
+karianx,Left,Right
 karnov,Fire,Jump,Option
+karnovr,Light Punch,Heavy Punch,Light Kick,Heavy Kick
+kengo,Slash,Jump
+kicknrun,Kick,Pass,Tackle
+kickridr,Accellerate
+kidniki,Sword,Jump
+kittenk,Attack,Jump
+kizuna,Punch,Kick,Weapon,Tag
+knckhead,High Attack,Low Attack,Jump
+kncljoe,Punch,Kick
+kodure,Slash,Defend,Jump
+kof2000,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+kof94,Punch,Kick,Strong Punch,Strong Kick
+kof95,Light Punch,Light Kick,Strong Punch,Strong Kick
+kof96,Light Punch,Light Kick,Strong Punch,Strong Kick
+kof97,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+kof98,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+kof99,Punch,Kick,Strong Punch,Strong Kick
+kotm,Punch,Kick,Jump
+kotm2,Punch,Kick,Jump
 ksayaku,Action,
+kyros,Punch,Kick
+landmakr,Release Block
+lastblad,Weak Slash,Strong Slash,Weak Kick,Repel
+lastbld2,A,B,C,D
+lastday,Fire
+lastmisn,Fire,Bomb,Weapon Select
+lbowling,Bowl
+ldrun2,Dig Left,Dig Right
+ldrun3,Dig Left,Dig Right
+ldrun4,Dig Left,Dig Right
+legendos,A,B,C,D
+leprechn
+lethalth,Fire,Bomb
+levers
+lgtnfght,Fire,Super Weapon
+liblrabl
+lifefrce,Shoot,Missile
+liquidk,Fire,Jump
+lizwiz,Fire
+loderndf,Dig Left,Dig Right
+logger,Jump
+logicpr2,Draw,Cross,Item Helper
+logicpro,Draw,Cross,Item Helper
+loht,Shoot,Jump
+lomakai,Attack,Jump
+lotlot,Swap
+lresort,Fire,Adjust Pod Movement
+lunarbat,Fire,Thrust,Shield/Tractor Beam
+lwings,ShootBomb/Jump
+m660,Fire
 machomou.Action,
 macross2,Fire,SmartBomb
+macrossp,Fire,Bomb
+madalien.Fire
+madcrash,Fire,Jump
+madgear,Jump
+magdrop2,A,B,C,D
+magdrop3,Top,Throw,Lower
+magicbub,Launch Ball
+majtitl2,Play shot,Options
+majtitle,Play shot,Options
+marineb,Net
+mariner,Gun/Torpedo
+marvins,Fire
+marvland,Jump
+masterw,Shot,Bomb
+mazinger,Shoot/Supercharge,Whip,Bomb
+mcatadv,Fire,Jump/Throw
+megablst,Fire
+megatack,Fire
 meosism,Stop,Stop,Stop
+metafox,Fire,Bomb
+metlhawk,Trigger,Thumb
 mhavoc,Fire/Jump,Shield
+mia,Knife,Extra Weapon,Choose Extra Weapon
+mikie,Open Door,Headbutt/Attack
+mimonkey,Fire,Transform
+minivadr,Fire
 missile,Right,Middle,Left
+mmaulers,Punch,Kick,Special
+mmaze,Fire,Jump
+mnight,Fire,Jump
 momoko,Shoot,Jump
+moonal2,Fire
+moonqsr,Fire/Thrust
+motos,Jump
+mouser,Jump
+mrgoemon,Swing,throw
+mrjong,Magic Ball
+mrtnt
+msgundam,Punch,Kick
 msisaac,Fire,Bomb
+mslug2,Shoot/Stab,Jump,Grenades/Cannon
+mslug3,Fire,Jump
+mslugx,Fire,Jump,Grenade
+mtlchamp,Low Attack,Medium Attack,High Attack
+mustache,Jump
+mutantf,Attack,Jump
+mutnat,A,B,C,D
+myhero,Attack,Jump
+mysticri
+mystston,Shoot,Hammer
+nam1975,Machine Gun,Grenade,Run/Flip
+naname,Rotate
+nbajamte,Shoot,Pass,Turbo
+nbbatman,Attack,Jump
+ncv1,A,B
+nebulray,Fire,Bomb
+nemesis,Fire,Bomb,Select Power-Up
+neocup98,Shoot/Low Pass/Slide,High Pass/Rough Play-Tackle,Short Pass/Action Player Shift
+newsin7,Fire
+nightstr,Fire
+ninclown,Punch,Kick
+ninjak,Attack,Jump
+ninjakd2,Throw/Fire,Jump
+ninjamas,Weak Punch/Slash,Strong Punch/Slash,Weak Kick,Strong Kick
+ninjemak,Fire,Special Weapon
+nrallyx,Smoke
+nslasher,Punch/Kick,Jump,Special Move
 nspirit,Attack,Jump,Change Weapons,??
+numanath,Punch/Kick,Jump,Special Move
+offtwall,Start,Action
+ohmygod,Drop Faster
+omegafFire,Special Weapon
+orbitron,Fire
+ordyne,Shoot,Bomb
+orunners,Accelerate,Brake,Shift
+oscar,Shoot,Jump,Select
+outfxies,Left Attack,Jump,Right Attack
+outzone,Shoot,Bomb
+ozmawars,Fire
+p47,Fire,Bombs/Missles
+p47aces,Fire,Bombs
 pacman,Speed
+pacnpal,Fire
+palamed,Throw,Choice
+pang,Fire
+pangpoms,Kick,Jump
+parodius,Power-up,Fire,Bell-power
+pballoon,Drop Bomb
+pbillrd,Shoot
+pbobbl2n,Fire
+pbobble4,Fire
+pbobblen,Fire
 perfman,Tunnel,Fire
 pettanp,WallUp
+phantom2,Fire
+phelios,Fire
+phozon,Reject Molecule
+pickin,Grab/Release
+pignewt,Jump
+pinbo,Right Flipper,Left Flipper
+pisces,Fire
+pistoldm,Fire
+pitnrun,Accel
+plumppop,Fire
+plusalph,Fire,Bomb
+poitto,Rotate
+popflame,Flame
+poundfor,Punch,Block
+powerins,Punch High,Punch Low,Kick High,Kick Low,Block High,Block Low
+powrplay,Hard Kick,Light Kick,Block
+prehisle,Shoot,Option
 primrage,Lunge,Kick,Tail
+propcycl,Left,Right,Ascend,Descend
+pspikes,Serve/Spike/Block
+psychic5,Hammer,Jump
 puchicar,Start,Right,Left
+pulirula,Fire,Jump
+pulstar,Fire,Drone Control
+punkshot2,Shoot,Pass,Punch
+pururun,Place Critter/Bomb,Activate Bomb
+puzlclub,Select
 puzldama,Rotate,??,??
+puzzledp,Shoot
+puzzli,Exchange Fish,Drop Fish
+pwrgoal,SHoot/Slide,Pass/Rough Play,Special Moves
+pwrinst2,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+pzlbowl,Angle Left,Throw,Angle Right
+quester,Fire/Release Ball
+rabiolepv,Fire,Punch
+raflesia,Fire
+raiden,Fire,Bomb
 raimais,Fire,Accelrate
+rambo3,Fire,Grenade
+raystorm,Fire,Homing-Missles
 razmataz,Shoot
+rbff1,Punch,Kick,Special,Line Change
+rbff2,Punch,Kick,Special,Line Change
+rbffspec,Punch,Kick,Special,Line Change
+redalert,Fire,Rotate Left,Rotate Right
+redbaron,Fire
+redclash,Fire
+relief,Fast Ball,Curve Ball,Special Pitch,Swing,PowerSwing,Bunt
+retofinv,Fire
+rezon,Fire
+ribbit
+ridhero,Accelerate,Brake,Turbo
+ridingf,Punch,Jump,Power Attack
+rimrockn,Shoot/Jump/Block,Pass/Swat
+ringrage,Punch,Kick
+rjammer,Punch,Kick
+roadriot,Pedal,Fire
+roboarmy,Attack,Jump,Special
+robocop2j,Fire,Jump,Direction Left/Right
+rockrage,Fire,Weapon
+roishtar,Attack/Use,Select
+rompers,Push
 route16,Speed
+rsgun,Vulcan Laser,Homing Shot,Spread Shot
+rshark,A,B,C
+rthun2,Fire,Jump
+rtype2,Fire,Shield Detach
+rtypeleo,Fire
+rungun2,Shoot/Jump,Steal/Pass,Turbo
+rygar,Shoot,Jump
+s1945ii,Fire,Special Weapon
+s1945p,Fire,Bomb
+sabotenb,Throw/Fire,JUmp
 safarir,Speed
+sailormn,Attack,Jump,Special
+salmndr2,Shoot,Missile
+samsho,Light Slash/Hard Slash,Medium Slash/Hard Slash,Light Kick/Hard Kick,Medium Kick/Hard Kick
+samsho2,Light Slash,Medium Slash,Light Kick,Medium Kick
+samsho3,Light Slash,Medium Slash,Strong Slash,Kick
+samsho4,Weak Slash,Medium Slash,Strong Slash,Kick
+samurai,Sword
+sandscrp,Fire,Bomb
+saturn,Fire
+savagere,Punch,Kick,Weapon Attack,3D Attack
+sbasketb,Dribble,Shoot,Pass
+sbomberb,Fire
 scfinals,Kick,Pass,Special Motion
+schaser,Speed Boost
+sci,Pedal,Fire,Low/High,Turbo
 scotrsht,Fire
+scregg,Kick/Throw Eyes
+scross,Throttle,Brake
+sdungeon,Robotron
+secretag,Shoot/Kick,Jump
+sectionz,Shoot,Turn Around
+seganinj,Throw Forward,Throw Upwards,Ninja Magic
+seicross,Fire
+selfeena,Stun Shot/Pick Up Chest/Throw Chest,Stun Blast
+sengekis,Shot,Bomber
+sengoku,Attack,Special Attack,Change Character
+sengoku2,Attack,Special Attack,Change Character
+senjyo,Fire
+sf1,Jab Punch,Strong Punch,Fierce Punch,Short Kick,Forward Kick,Roundhouse Kick
+sfposeid,Harpoon/Torpedo,Dismount
+shadfrce,Punch,Kick,Jump
+shadowld,Shoot,Jump
+shangha2,Select Tile,Deselect Tile
+shangha3,Select Tile,Deselect Tile
+shanghai,Select Tile,Deselect Tile
+shangkid,Kick,Punch
+shienryu,Fire,Bomb
+shippumd,Fire,Bomb
+shocking,Attack/Activate Item
+shuuz,Next
+silentd,Attack,Jump,Trick
+silkworm,Fire,Bomb/Jump,Tilt/Shoot Backwards
 simpsons,Attack,Jump
+skyadvntFire,Weapon,Ship
+skybump,Fire,Accelerate
+skykid,Fire,Loop/Bomb
+skykiddx,Fire,Loop/Bomb
+skylancr,Fire
+skyraid,Fire
+skyskipr,Bomb
+skysmash,Accelerate,Bomb
+slapshot,Shoot,Slice
+soldivid,Shot,Slash,Magic Selection
+solomon,Wand,Fireball
 solvalou,Ion,Blaster
+sonic,Jump
+sonicbom,Fire,Bomb
+sonicwi2,Fire,Bomb
+sonicwi3,Fire,Bomb
+sotsugyo,Select
+spacbeam,Fire
 spacecr,Fire
+spacefev,Fire
+spacefrt,Fire,Thrust
+spaceskr,Fire,Fire/Bomb
+spacetrk,Fire,Barrier/Shield
+spang,Fire
+spcenctr,Fire
+spcinv95,Fire,Special Weapon
+spcking2,Fire
+spclaser,Fire
+spclforc,Fire
+spelunk2,Shoot/Set Bomb,Jump
+spelunkr,Shoot,Jump
+spinmast,Fire,Jump,Super Attack
+splatter,Attack,Jump
+springer,Kick
+spy,Punch/Kick,Shoot/Kick
+ssi,Fire,Special
+ssideki,Shoot/Slide,Pass/Tackle
+ssideki2,A,B,C,D
+ssideki3,Shoot/Low Pass/Sliding Tackle,High Pass/Rough Play/Tackle,Short Pass/Select Main Player
+ssideki4,Shoot/Low Pass/Sliding,High Pass/Rough Play,Short Pass/Action Player Shift
+sspirits,Fire,Attack,Air/Ground
 ssridersubc,Shoot,Jump
+sss,Jump,Tricks
 stargate,Fire,Thrust,Reverse,Inviso,Hyperspace,SmartBomb
 suprglob,Ceiling,Tickler
 tempest,Fire,Super Zap
@@ -303,5 +605,3 @@ viostorm,Attack,Jump
 volfied,Action
 warriorb,Fight,Jump,Pause,??
 wmatch,Start
-
-
