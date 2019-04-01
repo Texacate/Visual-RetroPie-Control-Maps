@@ -3,9 +3,8 @@
 # 20pacgal is one such example. But 99% of them are in the default mame order.
 # -------------------------------------------------------------------------
 10yard,Pass/Hike,Lateral
-#20pacgal,Ms.P(1P),Fire,Ms.P(2P),,Galaga(2P),Galaga(1P)
 280zzzap,Accel,Shift
-40love,BackHand,LightSwing,HardSwing,Toss
+40love,Back Hand,Light Swing,Hard Swing,Toss
 88games,Run,Jump,Run
 8ballact,Cue Ball
 abcop,Accel,Jump
@@ -596,12 +595,122 @@ ssideki4,Shoot/Low Pass/Sliding,High Pass/Rough Play,Short Pass/Action Player Sh
 sspirits,Fire,Attack,Air/Ground
 ssridersubc,Shoot,Jump
 sss,Jump,Tricks
+stactics,Fire,Shield Renewal,Base 1,Base 2,Base 3,Base 4,Base 5
+stadhero,Throw/Steal,Pitch/Swing/Return/Throw,Relief Pitcher/Play Deep/Relief Batter
+stagger1,Fire,Bomb
 stargate,Fire,Thrust,Reverse,Inviso,Hyperspace,SmartBomb
+starshp1,Fire,Photon Torpedo
+stg,Fire,Use Secondary Item
+stkclmns,Rotate,Use Coins
+stmbladeFire,Bomb/Missile
+strahl,Fire/Rotate,Special/Rotate
+stratofb,Fire,Reverse Ship
+streetsm,Punch,Kick,Jump
+strhoop,Jump/Block/Shoot/Dunk,Cut Off/Steal/Pass
+strkfgtr,Vulcan Gun,Missile,??,Afterburner
+subroc3d,Fire
+supbtime,Pepper,Jump
+superbik,Fire,Jump
+superspy,Attack,Guard,Change Weapon
+supertnk,Fire
 suprglob,Ceiling,Tickler
+suprridr,Jump
+surpratk,Shoot,Jump
+survarts,Light Punch,Medium Punch,Strong Punch,Light Kick,Medium Kick,Strong Kick
+suzuk8h2,Throttle,Brake
+suzuka8h,Throttle,Brake
+svf,Shoot,Pass-A,Pass-B
+swcourt,Swing,Swing,Swing
+sws,Throw To Bases,Pitch/Swing,Time Out
+sws92,Throw To Bases,Pitch/Swing,Time Out
+sws93,Throw To Bases,Pitch/Swing,Time Out
+sws95,Throw To Bases,Pitch/Swing,Time Out
+sws96,Throw To Bases,Pitch/Swing,Time Out
+sws97,Throw To Bases,Pitch/Swing,Time Out
+sws98,Throw To Bases,Pitch/Swing,Time Out
+sws99,Throw To Bases,Pitch/Swing,Time Out
+syvalion,Fire
+tacscan,Fire,Add Ship
+tactcian,Fire,Barricade
+tail2nos,Accel,Brake
+tankbust,Fire,Rotate Gun Turret
+tankfrce,Fire
+tantr,Action
+tattass,Punch High,Kick High,Block High,Punch Low,Kick Low,Block Low]
+teddybb,Shoot,Jump
 tempest,Fire,Super Zap
+tetris,Rotate
+thehustl,Select,Switch
+thndrx2,Shoot,Option Proximity
+thunderx,Shoot,Bomb
+timefgtr,Fire
+timelimt,Fire
+timescan,Left Flipper,Right Flipper
+timscanr,Left Flipper,Right Flipper
+tinklpit,Stretch Line,Throw Power Ball
+tmnt2,Attack,Jump
+tmnt22p,Attack,Jump
+tmnt22pu,Attack,Jump
+tmnt2po,Jump,Attack
+tndrcade,Shoot,Bomb
+tnzs,Attack,Jump/Speed
 toffy,??,Bomb,
+toggle,Shoot
+tomcat,Fire
+tophuntr,Punch,Jump,Change Planes
+toryumon,Rotate
+tp84,Fire,Missile
+travrusa,Low,High
+tricktrp,Shoot,Change Weapons
+triothep,Attack,Jump
+troangel,Speed Up
+trojan,Attack,Shield
+truxton,Fire,Bomb
+truxton2,Fire,Bomb
+tturf,Punch,Kick,Jump
+tugboat,Horn
+tumblep,Fire,Jump
+twinbee,Fire,Bomb
+twinhawk,Fire,Bomb
+twinqixv,Draw Faster
+uccops Attack Jump
+uccopsar,Attack,Jump
+ultennis,Serve 1/Normal Shot,Serve 2/Lob Shot,Serve 3/Smash
+ultraman,Punch,Kick,Jump
+ultrax,Fire,Grenade/Mine,Smartbomb
 umanclub,Laser,Fire Ball
+umk3,Run,Low Punch,High Punch,Block,Low Kick,High Kick]
+valtric,Fire,Extra Weapon
+vangrd2,Fire,Missile
+vanvan,Jump
+vaportra,Fire,Special
+vastar,Fire,Shield
+vendetta2pu,Punch,Kick
+vfive,Shoot,Power-up
+victnine,Fire,Smart Bomb
+viewpoin,Fire,Smart Bomb
 viostorm,Attack,Jump
 volfied,Action
+vulgus,Fire,Cannon
+wanted,Fire
+wardner,Fire,Jump
+warofbug,Fire
 warriorb,Fight,Jump,Pause,??
+wb3,Shoot,Jump
+wc90,Slide Tackle/Low Pass,Header/High Pass
+wh2j,Punch,Kick,Taunt
+wildplt,Fire
+wiping,Fire
+wits,Speed Up,Jump
+wiz,Action,Select Magic
 wmatch,Start
+wndrmomo,Attack/Transform,Jump
+wndrplnt,Fire,Bomb
+worldwar,Fire,Select
+wrestwar,Punch,Kick
+xevi3dg,Fire,Bomb
+xexex,Fire,Flint Control
+yamyam,Push One Space,Push As Far As Available
+yiear,Punch,Kick
+zedblade,Shoot,Bomb
+zektor,Fire,Thrust
