@@ -1,10 +1,9 @@
-# My list of games that I could not find button data for
-# Note: a few have been rearranged to fit my preferrred layout
-# 20pacgal is one such example. But 99% of them are in the default mame order.
+# Addtionsal Button data
+# Culled from www.gamesdatabase.org, and www.arcade-museum.com
 # -------------------------------------------------------------------------
 10yard,Pass/Hike,Lateral
 280zzzap,Accel,Shift
-40love,Back Hand,Light Swing,Hard Swing,Toss
+40love,Back Hand,Light Swing,??,Hard Swing
 88games,Run,Jump,Run
 8ballact,Cue Ball
 abcop,Accel,Jump
@@ -14,6 +13,10 @@ afighter,1,2,3
 agallet,Shot,Bomb
 aliensec,Fire
 ambush,Fire,Thruster
+aodk,Punch,Kick,Jump
+aof,Punch,Kick,Strong Attack,Taunt
+aof2,Punch,Kick,Attack,Taunt
+aof3,Punch,Kick,Blow Away Attack,Taunt
 appoooh
 aquarush,Left,Middle,Right
 arabfgt,Attack,Jump
@@ -30,6 +33,7 @@ batrider,Shot,Bomb
 battlcry,Punch,Kick,Jump
 battleg,Fire,Special,Tail Gun
 battroad,FrontGun,Side Guns,??
+bbakraid,Fire,Special,Tail Gun
 bbbxing,Head,Body,UpperCut
 bbmanw,Bomb,??
 bchopper,Fire,Special
@@ -108,6 +112,7 @@ cosmos,Fire,SlowMo
 countryc,Select Club
 cprogolf,Take Shot
 crbaloon,
+crkdown,Machine Gun,Super Bomb
 crospang,Pick/Place,??
 crshrace,Gas Pedal,Brakes,Horn
 crzrally,Low Gear,High Gear
@@ -115,11 +120,15 @@ csilver,Attack,Jump
 cuebrick,Move,Speed Up,Stop Ball
 cutieq,Serve
 cybattlr,Fire,Spin
+dadandrn,Light,Meduim,Heavy
+daikaiju,Laser,Breath Fire
 daitorid,Select
 dangseed,Fire,Smart Weapon
 darius,Missle,Bomb,Arm
 darius2,Missle,Bomb,Arm
 dariusg,Normal Attack,Special Attack
+darkedge,Light Punch,Heavy Punch,Jump,Light Kick,Heavy Kick
+darkmist,Attack,Magic
 darktowr,Swing Club,Jump
 darkwar,Fire,??
 darwin,Fire,Bomb
@@ -128,6 +137,7 @@ dblaxle,Accel,Brakes,Nitro,Low Gear
 dbreed,Attack,Jump
 dbz,Punch,Kick,SpecialAttack
 dbz2,LowPunch,HighPunch,LowKick,HighKick
+dbzvrvs,Left Punch,Right Punch,Jump
 dcon,Fire,Missle
 ddcrew2,Attack,Jump
 ddonpach,Shots/Laser,Bomber
@@ -141,8 +151,11 @@ desertbr,Fire,Invincible Running
 desertwr,Fire,Up/Dn
 devilw,??,Shoot,Jump
 dfeveron,Fire,Disco Bomb
+dharma,Push
 diamond,??
 dingo,Fruit
+dinorex,Bite,Kick
+dirtfoxj
 disco,Freeze Ruffian
 diverboy,Dive,??
 dleague,Pitch/Throw,Bat,??
@@ -152,11 +165,13 @@ dogfight,Fire
 dogpatch,Fire
 dogyuun,Shot,Bomb/SpeedUp,UnitBeam/Separate
 dokaben,PickTile,??
+dokidoki,Melt Ice,Jump
 dommy,Shot
 dondokod,Hammer/Toss,Jump
 donpachi,Shots,Bombers
 dorodon,??,??
 dotrikun,Speed Up,Pause
+dplay,Hit,Outfield Left,Outfield Right
 dragnblz,Shot,Magic Bomb,Dragon      
 dremshpr,Pick Square
 drgnbstr,Attack,Magic
@@ -168,22 +183,31 @@ drtoppel,Fire,Select
 dsaber,Shots,Bombs
 dsoccr94,Shoot,Pass
 dungeonm,Attack,Jump,??,??
+dunkmnia,??,Shoot/Block,Pass
+dunkshot,Shoot/Jump,Pass/Steal
 dyger,Guns,Bombs,Bombs
 dynablst,Bomb,Remote Bomb
+dynamski,Speed Up,Jump
 dynduke,Fire,Punch,Kick
 ebases,Bat/Throw/Pitch
 edf,Fire,Special Weapon
 edrandy,Attack,Jump
 eggor,Fire
 eightfrc,Shots,Special Bombs
+einning,Hit,Outfield Left,Outfield Right
 elvactr,Fire,Jump
 emeralda,Rotate,Rotate,Rotate
 empcity,Shoot,Block
+enduror,Accelerate,Brake
 enforce,Cannon,Machine Gun
+equites,Fire(Ground),Fire(Air)
 esb,Fire,TowCable
+esckids,Run,Jump
 espial,Fire
 esprade,Fire,Special Weapon,Force Field
+eto,Rotate left,Rotate Right
 evilston,Attack,Jump
+exctleag,1,2,3,4,5,6,7
 exctsccr,Pass,Kick
 exedexes,Fire,Bomb
 exprraid,Punch,Kick
@@ -198,11 +222,17 @@ fantland,Fire,Jump
 fantzn2x,Fire,Bomb
 fantzone,Fire,Bomb
 fastlane,Speed,Bonus Action
+fatfursp,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+fatfury1,Punch,Kick,Throw
+fatfury2,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+fatfury3,Weak Punch,Weak Kick,Strong Punch,Strong Kick
+fghthist,Light Punch,Meduim Punch,Heavy Punch,Light Kick,Meduim Kick,Heavy Kick
 fhawk,Guns,Missles
 fieldday,Left,Action,Right
 fightrol,Jump,Punch
 finalap3,High/Low
 finalapr,High/Low
+finalizr,Fire,Shield
 finallap,High/Low
 finehour,Fire,??,Jet Pack
 firebarr,Fire,Super Bomb
@@ -210,6 +240,7 @@ firebatl,Fire,Bomb
 firebeas,Left,Right
 fireshrk,Fire,Bomb
 fitegolf,Swing,??
+fiveside,1
 flashgal,Attack,Jump
 flicky,Jump
 flower,Fire,??,Cutter
@@ -218,7 +249,9 @@ fncywld,Fire,Jump,??
 fnkyfish,Fire
 footchmp,Pass/Steal,Kick
 fourtrax,High/Low
+fpoint,Left,Right,Left
 freeze,Flame Thrower,Jet Pack
+freezeat,Fire
 friskyt
 fround,Face,Body,Guard
 fspiderb,Fire,Jump,??
@@ -227,6 +260,7 @@ funkyjet,Knockout,Change Position
 funnymou,Balloon
 gaia,Punch,Kick,Jump,Magic
 gaiapols,Attack,Ally Attack,Special
+galastrm,Fire,Fire,D Weapon,D Weapon
 galaxygn,Fire,Loop
 galivan,Punch/Fire,Kick
 galmedes,Fire,Select Weapon
@@ -263,7 +297,7 @@ gseeker,Fire,Bomb
 gslgr94u,A,B,C
 gslugrsj,A,B,C
 gstrik2,1,2,3
-gstriker1,2,3,4
+gstriker,1,2,3,4
 gsword,Upward Attack,Middle Attack,Downward Attack
 gt2k,Face Left,Face Right
 gtg,Swing
@@ -295,6 +329,7 @@ hardhead,Shoot,Jump
 hasamu,Select,Cancel
 hatris,Rotate Hats,Sale
 hcrash,Accelerate,Brake,Flip Car
+hdrivair,Wings,Wings
 headon,Speed
 headon2,Accelerate
 heartatk,Drop Plug,Freeze Enemy
@@ -333,7 +368,7 @@ hyprduel,Fire/Max Fire,Change/Max Fire
 ichidant,Button
 iganinju,1,2,
 igmo,Move,Fire
-ikki.Attack
+ikki,Attack
 imago,Fire
 imgfight,Fire,Change Speed
 imsorry,Punch,Jump
@@ -358,6 +393,7 @@ jollyjgr
 joyjoy,A,B,C,D
 jumpcoas,Jump
 jumpkids,Attack,Jump
+jumpshot,Shoot/Block
 junofrst,Fire,Warp
 kaiserkn,Light Punch,Meduim Punch,Heavy Punch,Light Kick,Meduim Kick,Heavy Kick
 kamenrid,Accelerate,Attack
@@ -375,7 +411,7 @@ kickoff,Shoot,Pass/Tackle
 kickridr,Accelerate
 kidniki,Sword,Jump
 kikcubic,Freeze/Push,Drop Block
-kikikaiFire,Flag
+kikikai,Fire,Flag
 kikstart,Accelerate,1st Gear,2nd Gear,3rd Gear
 kittenk,Attack,Jump
 kizuna,Punch,Kick,Weapon,Tag
@@ -399,6 +435,7 @@ kungfut,Knock on Door,Jump,Summon Cloud
 kyros,Punch,Kick
 kyukaidk,1,2,3
 kyustrkr,Shoot,Pass,Tackle
+ladygolf,B,A
 landmakr,Release Block
 lasso,Lasso,Fire
 lastblad,Weak Slash,Strong Slash,Weak Kick,Repel
@@ -407,6 +444,7 @@ lastday,Fire
 lastfort,Select
 lastmisn,Fire,Bomb,Weapon Select
 laststar
+lbgrande,Receive/Tackle,Pass,Shoot
 lbowling,Bowl
 ldrun2,Dig Left,Dig Right
 ldrun3,Dig Left,Dig Right
@@ -438,11 +476,11 @@ lunarbat,Fire,Thrust,Shield/Tractor Beam
 lwings,Shoot,Bomb/Jump
 m660,Fire
 machbrkr,LeftMiddle,Right
-machomou.Action,
+machomou,Action,
 macross,Shot,Bomb
 macross2,Fire,SmartBomb
 macrossp,Fire,Bomb
-madalien.Fire
+madalien,Fire
 madcrash,Fire,Jump
 madgear,Jump
 madmotor,Wheelie,Attack
@@ -452,8 +490,10 @@ magdrop3,Top,Throw,Lower
 magicbub,Launch Ball
 magmax,Fire
 mahoudai,Shot,Bomb
+mainsnk,Move,Move,Left Uppercut,Right Uppercut
 majtitl2,Play shot,Options
 majtitle,Play shot,Options
+maniacsq,Rotate
 manybloc,Spin Reels,Help
 marineb,Net
 mariner,Gun/Torpedo
@@ -619,6 +659,7 @@ prmrsocr,Shoot/Tackle,Pass
 progolf,Take Shot
 progress,Fire,Missle,Aim Missle
 propcycl,Left,Right,Ascend,Descend
+prosport,Shoot
 pspikes,Serve/Spike/Block
 psurge,Fire
 psychic5,Hammer,Jump
@@ -663,6 +704,7 @@ redclash,Fire
 redrobin,Jump
 reikaids,Punch,Kick,jump
 relief,Fast Ball,Curve Ball,Special Pitch,Swing,PowerSwing,Bunt
+repulse,Fire,Bomb
 retofinv,Fire
 rezon,Fire
 ribbit
@@ -748,6 +790,7 @@ shangha2,Select Tile,Deselect Tile
 shangha3,Select Tile,Deselect Tile
 shanghai,Select Tile,Deselect Tile
 shangkid,Kick,Punch
+shangon,Throttle,Brake,Turbo/Nitro
 shienryu,Fire,Bomb
 shippumd,Fire,Bomb
 shocking,Attack/Activate Item
@@ -812,6 +855,7 @@ speedspn,Topspin,Sidespin,Backspin
 spelunk2,Shoot/Set Bomb,Jump
 spelunkr,Shoot,Jump
 spidey,Attack,Jump
+spinlbrk,Fire,Grenade,Dodge
 spinmast,Fire,Jump,Super Attack
 splat,,Dual Joysticks
 splatter,Attack,Jump
@@ -931,6 +975,7 @@ tokisens,Attack,Bomb
 tomcat,Fire
 tophuntr,Punch,Jump,Change Planes
 toryumon,Rotate
+toukon3,1,2,3,4,5,6
 tp84,Fire,Missile
 transfrm,Fire,Transform
 travrusa,Low,High
@@ -995,6 +1040,7 @@ wilytowr,Jump
 wiping,Fire
 wits,Speed Up,Jump
 wiz,Action,Select Magic
+wldcourt,Swing,Swing
 wmatch,Start
 wndrmomo,Attack/Transform,Jump
 wndrplnt,Fire,Bomb
@@ -1002,6 +1048,7 @@ worldwar,Fire,Select
 wrestwar,Punch,Kick
 wrofaero,Fire,Option
 ws,Run/Steal/Pickoff,Swing/Pitch/Field,Timeout
+wwestern,Fire,Jump,DUAL JOYSTICKS
 wwjgtin,Jump,Whip
 xevi3dg,Fire,Bomb
 xexex,Fire,Flint Control
@@ -1016,4 +1063,3 @@ youjyudnmFire,Powerful Shot
 zaviga,Fire,Dive/Climb
 zedblade,Shoot,Bomb
 zektor,Fire,Thrust
-
