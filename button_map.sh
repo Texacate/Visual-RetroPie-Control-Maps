@@ -17,9 +17,9 @@ CLONEDB="./mame2003-plus.csv"
 ## Set BUTTONDB to  the database of button labels
 ## Data format: 
 ##    rom_name,button1_label,button2_label,button3_labal, ... ,button10_label
-#BUTTONDB="./custom_map.csv"
-BUTTONDB="./button_map.csv"
-#BUTTONDB="./controls.csv"
+BUTTONDB1="./primary_map.csv"
+BUTTONDB2="./secondary_map.csv"
+BUTTONDBc="./custom_map.csv"
 
 name=""
 b1=""
@@ -54,6 +54,7 @@ function findCurrentOSType()
                 MAGICK="magick"
                 font="Arial"
                 fontB="ArialB"
+#               fontB="ComicSansMSB"
             } ;;    
             "Linux")
             {
@@ -73,15 +74,16 @@ function findCurrentOSType()
 
 function get_parent_buttons () {
     local rom="$1"
+    local database="$2"
     local name=""
-    echo "Looking for $rom button map data"
+    echo "Looking for $rom button map data in $database"
     while read -r name b1 b2 b3 b4 b5 b6 b7 b8 b9 b10; do
         if [[ "$rom" == "$name" ]]; then
             echo "  Found $rom button map text"
 	    BTN_DATA="$rom"
             return
         fi
-    done < <(tr -d '\r' < "$BUTTONDB")
+    done < <(tr -d '\r' < "$database")
 }
 
 function get_parent_clone () {
@@ -117,18 +119,52 @@ rpL3="$b9"
 rpR3="$b10"
 }
 
+function map_buttons_retro_pad_sec () {
+rpB="$b1"
+rpA="$b2"
+rpR="$b3"
+rpY="$b4"
+rpX="$b5"
+rpL="$b6"
+rpL2="$b7"
+rpR2="$b8"
+rpL3="$b9"
+rpR3="$b10"
+}
+
 # Map retro pad button order to control panel layout
-function map_buttons_control_panel () {
+function map_buttons_control_panel_6btn () {
+# 6-button / SNES
 cp1="$rpY"
 cp2="$rpX"
 cp3="$rpL"
 cp4="$rpB"
 cp5="$rpA"
 cp6="$rpR"
-cp7="$rpR2"
+}
+
+function map_buttons_control_panel_8btn () {
+# 8-button / 10-panel
+cp1="$rpY"
+cp2="$rpX"
+cp3="$rpL"
+cp7="$rpR"
+cp4="$rpB"
+cp5="$rpA"
+cp6="$rpL2"
+cp8="$rpR2"
+}
+
+function map_buttons_control_panel_mdrn () {
+# Modern Fightstick / Modern
+cp1="$rpY"
+cp2="$rpX"
+cp3="$rpR"
+cp7="$rpL"
+cp4="$rpB"
+cp5="$rpA"
+cp6="$rpR2"
 cp8="$rpL2"
-cp9="$rpR3"
-cp10="$rpL3"
 }
 
 # returns the desired font point-size, based on the length of the button label string
@@ -140,7 +176,9 @@ function calc_point () {
   elif  [ $length -le 15 ]; then point="150"
   elif  [ $length -le 18 ]; then point="120"
   elif  [ $length -le 20 ]; then point="100"
-  elif  [ $length -le 40 ]; then point="50"
+  elif  [ $length -le 25 ]; then point="90"
+  elif  [ $length -le 30 ]; then point="80"
+  elif  [ $length -le 40 ]; then point="70"
   else  point="25"
   fi
   #echo "calc_point ( $string $length ) = $point "
@@ -225,7 +263,7 @@ function get_font_sizes () {
   calc_point $cp7;  pt7=$point
   calc_point $cp8;  pt8=$point
   calc_point $cp9;  pt9=$point
-  calc_point $cp10;  pt10=$point
+  calc_point $cp10; pt10=$point
   #echo "$pt1 $pt2 $pt3 $pt4 $pt5 $pt5"
 }
 
@@ -238,8 +276,8 @@ function get_font_sizes () {
 #   (_cp4_)  (_cp5_)  (_cp6_)
 #   
 
-function gen_annotated_png_6_button () {  
-  sw=5  
+function gen_annotated_png_6btn_cp () {  
+  local sw=5  
   $MAGICK convert -size 2400x1440 xc:black \
     $btn1_img -gravity south  -geometry -550+550 -composite \
     $btn2_img -gravity south  -geometry   +0+675 -composite \
@@ -265,8 +303,8 @@ function gen_annotated_png_6_button () {
 #   (_cp4_)  (_cp5_)  (_cp6_)  (_cp8_)
 #   
 
-function gen_annotated_png_8_button () {  
-  sw=5  
+function gen_annotated_png_8btn_cp () {  
+  local sw=5  
   $MAGICK convert -size 2400x1440 xc:black \
     $btn1_img -gravity south  -geometry -750+550 -composite \
     $btn2_img -gravity south  -geometry -250+650 -composite \
@@ -349,12 +387,14 @@ function gen_rom_button_map () {
   local rom="$1"
   echo "Building image for $rom.zip" 
   
-  map_buttons_retro_pad 
-  map_buttons_control_panel
+  map_buttons_retro_pad_sec 
+  map_buttons_control_panel_6btn
+# map_buttons_control_panel_8btn
+# map_buttons_control_panel_mdrn
   get_button_color
   get_font_sizes
-  gen_annotated_png_6_button 
-# gen_annotated_png_8_button 
+  gen_annotated_png_6btn_cp
+# gen_annotated_png_8btn_cp
   gen_logo_png $rom
 }
 
@@ -367,16 +407,26 @@ findCurrentOSType
 echo "Loading parent_clone database: $CLONEDB"
 readonly CLONEDB
 
-echo "Loading button map database: $BUTTONDB"
-readonly BUTTONDB
+echo "Loading primary button map database:   $BUTTONDB1"
+readonly BUTTONDB1
+
+echo "Loading secondary button map database: $BUTTONDB2"
+readonly BUTTONDB2
+
+echo "Loading custom button map database:    $BUTTONDBc"
+readonly BUTTONDBc
 
 get_parent_clone   $1
-get_parent_buttons $1
+
+if [ "$BTN_DATA" == "" ]; then get_parent_buttons $1 $BUTTONDBc; fi
+if [ "$BTN_DATA" == "" ]; then get_parent_buttons $1 $BUTTONDB1; fi
+if [ "$BTN_DATA" == "" ]; then get_parent_buttons $1 $BUTTONDB2; fi
 
 if [ "$BTN_DATA" == "" ]; then
     if [ "$CLONE_OF" != "" ]; then
-       echo "  No button data for $1, try parent"
-       get_parent_buttons $CLONE_OF
+       echo "  No button data for $1, try parent ($CLONE_OF)"
+       if [ "$BTN_DATA" == "" ]; then get_parent_buttons $CLONE_OF $BUTTONDB1; fi
+       if [ "$BTN_DATA" == "" ]; then get_parent_buttons $CLONE_OF $BUTTONDB2; fi
     fi
 fi
 
