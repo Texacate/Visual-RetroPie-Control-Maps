@@ -7,19 +7,17 @@
 # --------------------------------------
 # Useful maps for debugging
 # --------------------------------------
-ControlPanel,cp4,cp5,cp6,cp1,cp2,cp3,cp7,cp8
-DataBase,db1,db2,db3,db4,db5,db6,db7,db8,db9,db10
 MAME,1,2,3,4,5,6,7,8,9,10
-EmulationStation,Back,Start,PageDn,Favorite,Random,PageUp
-RetroPad,B,A,R,Y,X,L
-P1_iPac,L-shift,Z,X,L-ctrl,L-alt,space
-P2_iPac,W,I,K,A,S,Q
+EmulationStation,Favorite,Random,PageUp,Back,Start,PageDn
+RetroPad,Y,X,L,B,A,R
+P1_iPac,L-ctrl,L-alt,space,L-shift,Z,X
+P2_iPac,A,S,Q,W,I,K
 
 # --------------------------------------
 # Add your custom maps below whenever rearranging buttons in mame or retroarch.
 # --------------------------------------
-NeoGeo,B-yel,D-blu,,A-red,C-grn,,
-20pacgal,Ms.P(2P),Fire,Galaga(2P),Ms.P(1P),,Galaga(1P)
+NeoGeo,A-red,C-grn,,B-yel,D-blu,,
+20pacgal,Ms.P(1P),,Galaga(1P),Ms.P(2P),Fire,Galaga(2P)
 pacman,Speed
-astdelux,Shields,,,,Thrust,Fire
-asteroid,Hyperspace,,,,Thrust,Fire
+astdelux,,Thrust,Fire,Shields,,,
+asteroid,,Thrust,Fire,Hyperspace,,,
