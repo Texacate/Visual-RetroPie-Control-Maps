@@ -107,25 +107,12 @@ function get_parent_clone () {
 
 # Map database button order to retro pad
 function map_buttons_retro_pad () {
-rpB="$b1"
-rpA="$b2"
-rpR="$b3"
-rpY="$b4"
-rpX="$b5"
-rpL="$b6"
-rpL2="$b7"
-rpR2="$b8"
-rpL3="$b9"
-rpR3="$b10"
-}
-
-function map_buttons_retro_pad_sec () {
-rpB="$b1"
-rpA="$b2"
-rpR="$b3"
-rpY="$b4"
-rpX="$b5"
-rpL="$b6"
+rpB="$b4"
+rpA="$b5"
+rpR="$b6"
+rpY="$b1"
+rpX="$b2"
+rpL="$b3"
 rpL2="$b7"
 rpR2="$b8"
 rpL3="$b9"
@@ -387,7 +374,7 @@ function gen_rom_button_map () {
   local rom="$1"
   echo "Building image for $rom.zip" 
   
-  map_buttons_retro_pad_sec 
+  map_buttons_retro_pad 
   map_buttons_control_panel_6btn
 # map_buttons_control_panel_8btn
 # map_buttons_control_panel_mdrn
