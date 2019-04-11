@@ -405,13 +405,13 @@ function gen_rom_button_map () {
   local lay="$2"
   echo "Building image for $rom.zip on $lay" 
   
-  if   [ "$lay" == "fba" ]; then
+  if   [ "$lay" == "-fba" ]; then
     map_buttons_retro_pad_fba
     map_buttons_control_panel_6btn
-  elif [ "$lay" == "8btn" ]; then
+  elif [ "$lay" == "-8btn" ]; then
     map_buttons_retro_pad_8btn
     map_buttons_control_panel_8btn
-  elif [ "$lay" == "mdrn" ]; then
+  elif [ "$lay" == "-mdrn" ]; then
     map_buttons_retro_pad_mdrn
     map_buttons_control_panel_mdrn
   else
@@ -422,11 +422,11 @@ function gen_rom_button_map () {
   get_button_color
   get_font_sizes
   
-  if   [ "$lay" == "fba" ]; then
+  if   [ "$lay" == "-fba" ]; then
     gen_annotated_png_6btn_cp
-  elif [ "$lay" == "8btn" ]; then
+  elif [ "$lay" == "-8btn" ]; then
     gen_annotated_png_8btn_cp
-  elif [ "$lay" == "mdrn" ]; then
+  elif [ "$lay" == "-mdrn" ]; then
     gen_annotated_png_8btn_cp
   else
     gen_annotated_png_6btn_cp
