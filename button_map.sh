@@ -106,18 +106,46 @@ function get_parent_clone () {
 }
 
 # Map database button order to retro pad
-function map_buttons_retro_pad () {
-rpB="$b4"
-rpA="$b5"
-rpR="$b6"
+function map_buttons_retro_pad_mame () {
 rpY="$b1"
 rpX="$b2"
 rpL="$b3"
-rpL2="$b7"
-rpR2="$b8"
-rpL3="$b9"
-rpR3="$b10"
+rpB="$b4"
+rpA="$b5"
+rpR="$b6"
 }
+
+function map_buttons_retro_pad_fba () {
+rpY="$b4"
+rpX="$b5"
+rpL="$b6"
+rpB="$b1"
+rpA="$b2"
+rpR="$b3"
+}
+
+function map_buttons_retro_pad_8btn () {
+rpY="$b1"
+rpX="$b2"
+rpL="$b3"
+rpB="$b4"
+rpA="$b5"
+rpL2="$b6"
+rpR="$b7"
+rpR2="$b8"
+}
+
+function map_buttons_retro_pad_mdrn () {
+rpY="$b1"
+rpX="$b2"
+rpR="$b3"
+rpB="$b4"
+rpA="$b5"
+rpR2="$b6"
+rpL="$b7"
+rpL2="$b8"
+}
+
 
 # Map retro pad button order to control panel layout
 function map_buttons_control_panel_6btn () {
@@ -135,10 +163,10 @@ function map_buttons_control_panel_8btn () {
 cp1="$rpY"
 cp2="$rpX"
 cp3="$rpL"
-cp7="$rpR"
-cp4="$rpB"
-cp5="$rpA"
-cp6="$rpL2"
+cp4="$rpR"
+cp5="$rpB"
+cp6="$rpA"
+cp7="$rpL2"
 cp8="$rpR2"
 }
 
@@ -147,10 +175,10 @@ function map_buttons_control_panel_mdrn () {
 cp1="$rpY"
 cp2="$rpX"
 cp3="$rpR"
-cp7="$rpL"
-cp4="$rpB"
-cp5="$rpA"
-cp6="$rpR2"
+cp4="$rpL"
+cp5="$rpB"
+cp6="$rpA"
+cp7="$rpR2"
 cp8="$rpL2"
 }
 
@@ -296,18 +324,18 @@ function gen_annotated_png_8btn_cp () {
     $btn1_img -gravity south  -geometry -750+550 -composite \
     $btn2_img -gravity south  -geometry -250+650 -composite \
     $btn3_img -gravity south  -geometry +250+750 -composite \
-    $btn7_img -gravity south  -geometry +750+650 -composite \
-    $btn4_img -gravity south  -geometry -750+50  -composite \
-    $btn5_img -gravity south  -geometry -250+150 -composite \
-    $btn6_img -gravity south  -geometry +250+250 -composite \
+    $btn4_img -gravity south  -geometry +750+650 -composite \
+    $btn5_img -gravity south  -geometry -750+50  -composite \
+    $btn6_img -gravity south  -geometry -250+150 -composite \
+    $btn7_img -gravity south  -geometry +250+250 -composite \
     $btn8_img -gravity south  -geometry +750+150 -composite \
     -gravity south -font $fontB -pointsize $pt1 -fill white -stroke black -strokewidth $sw -annotate -750+675 "$cp1" \
     -gravity south -font $fontB -pointsize $pt2 -fill white -stroke black -strokewidth $sw -annotate -250+775 "$cp2" \
     -gravity south -font $fontB -pointsize $pt3 -fill white -stroke black -strokewidth $sw -annotate +250+875 "$cp3" \
-    -gravity south -font $fontB -pointsize $pt7 -fill white -stroke black -strokewidth $sw -annotate +750+775 "$cp7" \
-    -gravity south -font $fontB -pointsize $pt4 -fill white -stroke black -strokewidth $sw -annotate -750+175 "$cp4" \
-    -gravity south -font $fontB -pointsize $pt5 -fill white -stroke black -strokewidth $sw -annotate -250+275 "$cp5" \
-    -gravity south -font $fontB -pointsize $pt6 -fill white -stroke black -strokewidth $sw -annotate +250+375 "$cp6" \
+    -gravity south -font $fontB -pointsize $pt4 -fill white -stroke black -strokewidth $sw -annotate +750+775 "$cp4" \
+    -gravity south -font $fontB -pointsize $pt5 -fill white -stroke black -strokewidth $sw -annotate -750+175 "$cp5" \
+    -gravity south -font $fontB -pointsize $pt6 -fill white -stroke black -strokewidth $sw -annotate -250+275 "$cp6" \
+    -gravity south -font $fontB -pointsize $pt7 -fill white -stroke black -strokewidth $sw -annotate +250+375 "$cp7" \
     -gravity south -font $fontB -pointsize $pt8 -fill white -stroke black -strokewidth $sw -annotate +750+275 "$cp8" \
     ./tmp/2_annotated.png
 }
@@ -367,21 +395,42 @@ function print_globals () {
   echo "  BUTTON4: \"$b4\""
   echo "  BUTTON5: \"$b5\""
   echo "  BUTTON6: \"$b6\""
+  echo "  BUTTON7: \"$b7\""
+  echo "  BUTTON8: \"$b8\""
 }
 
 
 function gen_rom_button_map () {
   local rom="$1"
-  echo "Building image for $rom.zip" 
+  local lay="$2"
+  echo "Building image for $rom.zip on $lay" 
   
-  map_buttons_retro_pad 
-  map_buttons_control_panel_6btn
-# map_buttons_control_panel_8btn
-# map_buttons_control_panel_mdrn
+  if   [ "$lay" == "fba" ]; then
+    map_buttons_retro_pad_fba
+    map_buttons_control_panel_6btn
+  elif [ "$lay" == "8btn" ]; then
+    map_buttons_retro_pad_8btn
+    map_buttons_control_panel_8btn
+  elif [ "$lay" == "mdrn" ]; then
+    map_buttons_retro_pad_mdrn
+    map_buttons_control_panel_mdrn
+  else
+    map_buttons_retro_pad_mame
+    map_buttons_control_panel_6btn
+  fi
+  
   get_button_color
   get_font_sizes
-  gen_annotated_png_6btn_cp
-# gen_annotated_png_8btn_cp
+  
+  if   [ "$lay" == "fba" ]; then
+    gen_annotated_png_6btn_cp
+  elif [ "$lay" == "8btn" ]; then
+    gen_annotated_png_8btn_cp
+  elif [ "$lay" == "mdrn" ]; then
+    gen_annotated_png_8btn_cp
+  else
+    gen_annotated_png_6btn_cp
+  fi
   gen_logo_png $rom
 }
 
@@ -423,7 +472,7 @@ if [ "$BTN_DATA" == "" ]; then
     print_globals
     exit
 else
-    gen_rom_button_map $1
+    gen_rom_button_map $1 $2
     print_globals
     exit
 fi
