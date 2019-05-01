@@ -1,4 +1,4 @@
-# Addtional Button data.
+# Additional button data
 # Pulled from www.gamesdatabase.org and www.arcade-museum.com
 # ROM,P1Bnt1,P1Btn2,P1Btn3,P1Btn4,P1Btn5,P1Btn6,P1Btn7,P1Btn8,P1Btn9,P1Btn10
 # -------------------------------------------------------------------------
@@ -272,7 +272,7 @@ garyoret,Attack,Magic
 gaunt22p,Fire,Magic
 gauntlet2p,Fire,Magic
 gaxeduel,Attack,Jump,Magic
-gbusters,Fire,Punch
+gbusters,Shoot,Super Shot
 gekirido,Fire,Skull Bomb
 gemini,Shoot,Special Weapon
 genix,Shoot,Jump,Special
@@ -563,7 +563,7 @@ mustang,Fire,Special
 mutantf,Attack,Jump
 mutnat,A,B,C,D
 myhero,Attack,Jump
-mysticri
+mysticri,Shoot,Sweep
 mystston,Shoot,Hammer
 nam1975,Machine Gun,Grenade,Run/Flip
 naname,Rotate
@@ -983,7 +983,7 @@ trckydoc,Jump,Attack
 tricktrp,Shoot,Change Weapons
 triothep,Attack,Jump
 triplep,Punch
-troangel,Speed Up
+troangel,Speed Up,Backwards
 trojan,Attack,Shield
 trstar,Weak,Meduim,Punch
 truxton,Fire,Bomb
