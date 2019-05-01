@@ -563,7 +563,7 @@ mustang,Fire,Special
 mutantf,Attack,Jump
 mutnat,A,B,C,D
 myhero,Attack,Jump
-mysticri
+mysticri,Shoot,Broomerang
 mystston,Shoot,Hammer
 nam1975,Machine Gun,Grenade,Run/Flip
 naname,Rotate
@@ -983,7 +983,7 @@ trckydoc,Jump,Attack
 tricktrp,Shoot,Change Weapons
 triothep,Attack,Jump
 triplep,Punch
-troangel,Speed Up
+troangel,Speed Up,Backwards
 trojan,Attack,Shield
 trstar,Weak,Meduim,Punch
 truxton,Fire,Bomb
