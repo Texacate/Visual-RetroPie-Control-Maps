@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # USAGE:  button_map.sh <rom_basename>
 
 ## Set LOGO_DIR to the folder of containing artwork to be inclued at the top of the generated images
