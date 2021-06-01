@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # USAGE:  for_all_roms.sh
 #
 # builds a button_map image for every ROM on your collection.
