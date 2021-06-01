@@ -1,7 +1,7 @@
 # Visual-RetroPie-Control-Maps
 Displaying a visual map or legend of how the in-game actions are mapped to the hardware control on my RetroPie cabinet
 
-Virtually every original arcade cabinet had a unique control layout, with different numbers of buttons. MAME cabinets are already a design compromise with buttons going used in many games. I wanted an easy way to remind myself what buttons cause what action, in any given arcade game.
+Virtually every original arcade cabinet had a unique control layout, with different numbers of buttons. MAME cabinets are already a design compromise with buttons going unused in many games. I wanted an easy way to remind myself what buttons cause what action, in any given arcade game.
 
 The software consist of three main components
 
